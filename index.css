@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 添加一些基础背景色确保深色模式生效 */
+body {
+  margin: 0;
+  background-color: #0f172a; /* 你的深色背景色 */
+  color: #f1f5f9;
+  font-family: sans-serif;
+}
