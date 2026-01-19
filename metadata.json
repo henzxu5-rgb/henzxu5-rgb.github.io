@@ -1,0 +1,7 @@
+{
+  "name": "AI Product Interviewer Showcase",
+  "description": "A refined personal portfolio showcasing an AI Product Manager Interviewer bot with a modern dark-mode aesthetic.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
