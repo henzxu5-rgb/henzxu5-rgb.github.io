@@ -1,20 +1,50 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 🚀 AI 产品经理面试官 (AI Product Interviewer)
 
-# Run and deploy your AI Studio app
+一个基于大模型驱动的智能面试模拟平台，旨在帮助产品经理实习生通过高强度的 AI 模拟对谈，快速提升业务逻辑、用户洞察及高压抗压能力。
 
-This contains everything you need to run your app locally.
+---
 
-View your app in AI Studio: https://ai.studio/apps/drive/1ExZYBJpBJ37oKd42YHgOBRjr7pL4VXP_
+## 🌟 项目亮点 (Highlights)
 
-## Run Locally
+* **沉浸式面试体验**：采用深色系专业 UI 设计，模拟真实面试紧张氛围。
+* **双端逻辑分离**：前端使用 **React + Vite** 构建极速响应界面，后端接入 **Dify** 智能体实现深度业务对话。
+* **自动化部署流程**：基于 **GitHub Actions** 实现了持续集成与部署 (CI/CD)，确保代码提交即生效。
+* **响应式布局**：完美适配不同尺寸屏幕，确保面试交互顺畅。
 
-**Prerequisites:**  Node.js
+---
 
+## 🛠️ 技术栈 (Tech Stack)
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+| 模块 | 技术方案 | 作用 |
+| :--- | :--- | :--- |
+| **框架** | React 18 + TypeScript | 构建强类型、易维护的前端逻辑 |
+| **构建工具** | Vite 5 | 提供极速的热更新和高效的生产环境打包 |
+| **样式** | Tailwind CSS | 采用原子化 CSS 实现精美的响应式设计 |
+| **AI 引擎** | Dify Chatbot (GPT-4 级驱动) | 提供专业的面试追问与逻辑评估逻辑 |
+| **部署** | GitHub Actions | 自动化构建并发布至 GitHub Pages |
+
+---
+
+## 📖 项目复盘 (Technical Journey)
+
+在本项目开发过程中，我独立解决了以下技术挑战：
+
+1.  **环境配置优化**：针对 Vite + Tailwind 在 GitHub Pages 上的部署限制，手动配置了 `postcss.config.js` 和 `tailwind.config.js`，解决了样式丢失问题。
+2.  **CI/CD 路径修复**：由于项目文件结构特殊（无 src 目录），通过自定义 `vite.config.ts` 的 `base` 路径及修改 `index.html` 引用路径，成功解决了“白屏”现象。
+3.  **容器自适应**：通过调整 `iframe` 容器的 CSS 视口单位（vh/vw），解决了跨域嵌入组件显示不全的问题。
+
+---
+
+## 🚀 如何体验 (Demo)
+
+1.  **在线预览**：[点击进入面试间](https://henzxu5-rgb.github.io/)
+2.  **操作指南**：
+    * 点击“开始面试”进入对话界面。
+    * 根据 AI 面试官提出的产品问题进行回答。
+    * *注：建议在稳定的网络环境下访问以获得最佳 AI 响应速度。*
+
+---
+
+## 🤝 致谢
+
+感谢 AI 辅助开发工具提供的技术灵感，本项目主要用于个人学习与产品经理面试实战模拟。
